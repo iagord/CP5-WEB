@@ -1,0 +1,15 @@
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5A2D82;
+    padding: 10px;
+}
+
+.navbar-input {
+    width: 50%;
+    height: 15px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 15px;
+}
