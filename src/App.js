@@ -8,14 +8,7 @@ function App() {
     <main>
       <Navbar/>
 
-      <section className="Section-Items">
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        
-      </section>
+    
       
       <Footer/>
     </main>
