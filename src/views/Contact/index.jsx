@@ -1,27 +1,48 @@
-import React from 'react'
+import React from "react";
 
-import Item from "./components/Item";
 import "./styles.css";
 
 const Contact = () => {
   return (
-    <section className="Section-Items">
-    <h1>Formulário</h1>
+    <section className="Section-Contact">
+      <h1 className="Section-Title">Formulário</h1>
 
-    <form>
-        <label for="fname">Nome:</label>
-        <input type="text" id="fname" name="fname" /><br /><br />
-        <label for="lname">Sobrenome:</label>
-        <input type="text" id="lname" name="lname" /><br /><br />
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" /><br /><br />
-        <label for="subject">Mensagem:</label>
-        <textarea id="subject" name="subject" placeholder="Escreva sua mensagem aqui..." style={{ height: "200px" }}></textarea><br /><br />
-        <input type="submit" value="Enviar" />
+      <form className="Section-Form">
+        <div>
+          <label for="fname">Nome:</label>
+          <input
+            className="Section-Input"
+            type="text"
+            id="fname"
+            name="fname"
+          />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input
+            className="Section-Input"
+            type="text"
+            id="email"
+            name="email"
+          />
+        </div>
+
+        <div>
+          <label for="subject">Mensagem:</label>
+          <textarea
+            className="Section-Input"
+            id="subject"
+            name="subject"
+            placeholder="Escreva sua mensagem aqui..."
+            style={{ height: "200px" }}
+          />
+        </div>
+
+        <input className="Section-Button"  type="submit" value="Enviar" />
       </form>
-    
-  </section>
-  )
-}
+    </section>
+  );
+};
 
 export default Contact;
