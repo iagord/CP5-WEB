@@ -3,7 +3,14 @@ import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <Navbar/>
+    <main>
+      <Navbar/>
+
+      <section className="Section-Items">
+        <Item />
+      </section>
+      
+    </main>
   );
 }
 
