@@ -14,12 +14,7 @@ function App() {
         <Item />
         <Item />
         <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
+        
       </section>
       
       <Footer/>
