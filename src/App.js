@@ -1,17 +1,27 @@
 import './App.css';
 import Navbar from './components/Navbar'
-import Item from './components/Item'
 import Footer from './components/Footer'
+
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
+import Home from './views/Home';
+import Contact from './views/About';
+
 
 function App() {
   return (
-    <main>
+    <Router>
+    <div>
       <Navbar/>
 
-    
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<Contact/>}/>
+    </Routes>
       
-      <Footer/>
-    </main>
+    <Footer/>
+    </div>
+    </Router>
   );
 }
 
