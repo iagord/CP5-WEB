@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Item from "./components/Item";
-import "./styles.css";
+import Item from "../../components/Item";
+import "./style.css";
 
 const Home = () => {
   return (
